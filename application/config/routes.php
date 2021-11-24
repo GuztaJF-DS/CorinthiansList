@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['inserir']['post'] = 'usuario/cadastrarUsuario';
 $route['entrar']['post'] = 'usuario/entrar';
 $route['sair'] = 'usuario/sair';
+$route['entrarUs']['post'] = 'usuario/entrarUs';
+$route['sairUs'] = 'usuario/sairUs';

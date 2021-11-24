@@ -15,7 +15,7 @@
 				<div class="jumbotron form-login">
 					<h5><?= $data['Title'] = $this->lang->line("Title")?></h5>
 					<hr class="my-4">
-						<form action="<?=base_url('entrar')?>" method="post">
+						<form action="<?=base_url('entrarUs')?>" method="post">
 						<div class="form-group">
 							<div class="row">
 								<label for="email"><?= $data['LabelEmail'] = $this->lang->line("LabelEmail")?>:</label>
@@ -37,17 +37,17 @@
 						<hr class="my-4">
 						<div class="form-group">
 							<div class="row">
-								<a href="<?=base_url()?>cadastro" class="btn btn-primary btn-block"><?= $data['btnSignUp'] = $this->lang->line("btnSignUp")?></a>
+								<a href="<?=base_url()?>cadastroUs" class="btn btn-primary btn-block"><?= $data['btnSignUp'] = $this->lang->line("btnSignUp")?></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row ">
+			<div class="row">
 				<div class=" alert alert-secondary col-2 offset-1">
 					<a href="<?=base_url('login')?>" class="btn btn-default btn-block">PT BR</a>
 				</div>
-				<div  class="col-2 alert alert-secondary offset-1">
+				<div  class=" col-2 alert alert-secondary offset-1">
 					<a href="<?=base_url('loginus')?>" class="btn btn-default btn-block">EN US</a>
 				</div>
 			<div>

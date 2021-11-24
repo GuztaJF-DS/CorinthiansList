@@ -1,0 +1,1 @@
+-norestrictions -nomemrestrict -percentagevidmem 100 -availablevidmem 12.0

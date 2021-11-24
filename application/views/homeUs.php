@@ -22,20 +22,20 @@ background-image: url(https://i.ibb.co/KjR6cYf/866d4856ac5eb5bff1d5eec5eb791229-
 					<h1><?= $info['EmailPlaceholder'] = $this->lang->line("EmailPlaceholder")?></h1>
 				</div>
 				<div class="col-4">
-					<a href="<?=base_url('sair')?>" class="btn btn-warning btn-block">Sair</a>
+					<a href="<?=base_url('sairUs')?>" class="btn btn-warning btn-block">Exit</a>
 				</div>
 			</div>
 			
 					<div class="col-12">
-						<h3>Listagem de Corinthianos</h3>
+						<h3>Corinthians's Fans List</h3>
 					</div>
 					<div class="col-4" style="overflow-x:auto;">
 						<table  class="table table-bordered table-striped">
 						  <thead class="thead-dark">
 						    <tr>
 						      <th scope="col">#</th>
-						      <th scope="col">Nome</th>
-						      <th scope="col">É Corintiano</th>
+						      <th scope="col">Name</th>
+						      <th scope="col">Is a Corinthians's Fan</th>
 						    </tr>
 						  </thead>
 						  <tbody>
@@ -59,7 +59,7 @@ background-image: url(https://i.ibb.co/KjR6cYf/866d4856ac5eb5bff1d5eec5eb791229-
 	<?php
 		}
 		else{
-			redirect(base_url($info["Redirect"] = $this->lang->line("Redirect")));
+			redirect(base_url('loginUs'));
 		}
 	?>
 </body>

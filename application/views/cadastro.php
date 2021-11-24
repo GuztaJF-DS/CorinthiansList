@@ -15,14 +15,14 @@ background-repeat: no-repeat;
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1>Cadastro de Torçedores</h1>
+				<h1><?= $data['FansSignUp'] = $this->lang->line("FansSignUp")?></h1>
 			</div>
 		</div>
 		<form action="<?=base_url('inserir')?>" method="post">
 			<div class="form-group">
 				<div class="row">
 					<div class="col-12">
-						<label for="nome">Nome:</label>
+						<label for="nome"><?= $data['LabelName'] = $this->lang->line("LabelName")?>:</label>
 						<input type="text" class="form-control" id="nome" name="nome">
 					</div>
 				</div>
@@ -30,11 +30,11 @@ background-repeat: no-repeat;
 			<div class="form-group">
 				<div class="row">
 					<div class="col-6">
-						<label for="email">E-mail:</label>
+						<label for="email"><?= $data['LabelEmail'] = $this->lang->line("LabelEmail")?>:</label>
 						<input type="email" class="form-control" id="email" name="email">
 					</div>
 					<div class="col-6">
-						<label for="senha">Senha:</label>
+						<label for="senha"><?= $data['LabelPassword'] = $this->lang->line("LabelPassword")?>:</label>
 						<input type="password" class="form-control" id="senha" name="senha">
 					</div>
 				</div>
@@ -43,11 +43,11 @@ background-repeat: no-repeat;
 				<div class="row">
 					<div class="col-12">
 						<fieldset>
-						<h5>Você é Corintiano?</h5>
+						<h5><?= $data['YouAre'] = $this->lang->line("YouAre")?></h5>
 						<input type="radio" name="corintiano" id="tru" value=Sim>
-						<label for="TRUE">Sim :D</label><br>
+						<label for="TRUE"><?= $data['Yes'] = $this->lang->line("Yes")?></label><br>
 						<input type="radio" name="corintiano" id="fake" value=Não>
-						<label for="FALSE">Não >:(</label><br>
+						<label for="FALSE"><?= $data['No'] = $this->lang->line("No")?></label><br>
 						</fieldset>
 
 					</div>
@@ -56,7 +56,7 @@ background-repeat: no-repeat;
 			<div class="form-group">
 				<div class="row">
 					<div class="col-12">
-						<button class="btn btn-success btn-block" type="submit">Cadastrar</button>
+						<button class="btn btn-success btn-block" type="submit"><?= $data['btnSignUp'] = $this->lang->line("btnSignUp")?></button>
 					</div>
 				</div>
 			</div>

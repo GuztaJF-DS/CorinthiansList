@@ -19,9 +19,19 @@ class Usuario extends CI_Controller{
 		$this->load->view('home',$data);
 	}
 
+	public function entrarUs(){
+		$usuario = new UsuarioModel;
+		$data['data'] = $usuario->listarCorinthianosUs();
+		$this->load->view('homeUs',$data);
+	}
+
 	public function sair(){
 		$usuario = new UsuarioModel;
 		$usuario->sair();
+	}
+	public function sairUs(){
+		$usuario = new UsuarioModel;
+		$usuario->sairUs();
 	}
 
 }
